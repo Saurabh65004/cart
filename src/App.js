@@ -136,6 +136,10 @@ class App extends React.Component{
       // this.setState({
       //     products
       // })
+      if(product.qty <= 0){
+          return;
+      }
+
       const docRef=this.db.collection("products").doc(products[index].id);
       docRef.update(
         {qty : products[index].qty-1 ,}
