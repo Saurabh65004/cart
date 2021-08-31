@@ -224,7 +224,7 @@ class App extends React.Component{
         <Navbar count={this.getCartCount()}/>
         <button onClick={()=>this.addProduct()} style={{padding: 20, fontSize: 20}}>Add +</button>
 
-        {this.state.isLoading ? <h1>Loading Products.....</h1>
+        {this.state.isLoading ? <img src="https://i.pinimg.com/originals/71/3a/32/713a3272124cc57ba9e9fb7f59e9ab3b.gif" alt="Loading Products ... "/>
         :<Cart products={products} 
           handleIncreaseQuantity={this.handleIncreaseQuantity}
           handleDecreaseQuantity={this.handleDecreaseQuantity}
